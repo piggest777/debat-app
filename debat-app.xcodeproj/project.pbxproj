@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */; };
-		B54E9C3720CEB65D001BE3EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3620CEB65D001BE3EF /* ViewController.swift */; };
+		B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */; };
 		B54E9C3A20CEB65D001BE3EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C3820CEB65D001BE3EF /* Main.storyboard */; };
 		B54E9C3D20CEB65D001BE3EF /* debat_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3B20CEB65D001BE3EF /* debat_app.xcdatamodeld */; };
 		B54E9C3F20CEB65D001BE3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C3E20CEB65D001BE3EF /* Assets.xcassets */; };
 		B54E9C4220CEB65D001BE3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C4020CEB65D001BE3EF /* LaunchScreen.storyboard */; };
+		B54E9C4B20CEBCD3001BE3EF /* SetUpTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B54E9C3120CEB65D001BE3EF /* debat-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "debat-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B54E9C3620CEB65D001BE3EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDebateVC.swift; sourceTree = "<group>"; };
 		B54E9C3920CEB65D001BE3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B54E9C3C20CEB65D001BE3EF /* debat_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = debat_app.xcdatamodel; sourceTree = "<group>"; };
 		B54E9C3E20CEB65D001BE3EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B54E9C4120CEB65D001BE3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B54E9C4320CEB65D001BE3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpTeamVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,8 @@
 		B54E9C3320CEB65D001BE3EF /* debat-app */ = {
 			isa = PBXGroup;
 			children = (
+				B54E9C4920CEBC82001BE3EF /* Controllers */,
 				B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */,
-				B54E9C3620CEB65D001BE3EF /* ViewController.swift */,
 				B54E9C3820CEB65D001BE3EF /* Main.storyboard */,
 				B54E9C3E20CEB65D001BE3EF /* Assets.xcassets */,
 				B54E9C4020CEB65D001BE3EF /* LaunchScreen.storyboard */,
@@ -65,6 +67,15 @@
 				B54E9C3B20CEB65D001BE3EF /* debat_app.xcdatamodeld */,
 			);
 			path = "debat-app";
+			sourceTree = "<group>";
+		};
+		B54E9C4920CEBC82001BE3EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */,
+				B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +110,7 @@
 				TargetAttributes = {
 					B54E9C3020CEB65D001BE3EF = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9X329BRT6C;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,7 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54E9C3720CEB65D001BE3EF /* ViewController.swift in Sources */,
+				B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */,
+				B54E9C4B20CEBCD3001BE3EF /* SetUpTeamVC.swift in Sources */,
 				B54E9C3D20CEB65D001BE3EF /* debat_app.xcdatamodeld in Sources */,
 				B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */,
 			);
@@ -266,11 +279,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9X329BRT6C;
 				INFOPLIST_FILE = "debat-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Piggy-Farm.debat-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -278,11 +293,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9X329BRT6C;
 				INFOPLIST_FILE = "debat-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Piggy-Farm.debat-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
