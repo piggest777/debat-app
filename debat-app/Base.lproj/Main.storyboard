@@ -36,7 +36,7 @@
                                             <action selector="startGameBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mHq-ay-JMu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrI-kb-fYz">
+                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="SetUpTeamVC" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrI-kb-fYz">
                                         <rect key="frame" x="30" y="65" width="250" height="35"/>
                                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -46,6 +46,10 @@
                                         <state key="normal" title="НАСТРОИТЬ КОМАНДЫ">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="setUpTeamBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YfF-2z-kPR"/>
+                                            <segue destination="0m7-o0-1Yc" kind="presentation" identifier="SetUpTeamVC" modalTransitionStyle="flipHorizontal" id="Bxt-04-I0H"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -64,9 +68,6 @@
                             <constraint firstItem="cbI-Fn-IdY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tbW-oF-h3C"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="teamSetBtnWasPressed" destination="DrI-kb-fYz" id="RP6-bH-gIl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +113,9 @@
                                             <constraint firstAttribute="height" constant="50" id="pMt-jx-PNI"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonWasPressed:" destination="0m7-o0-1Yc" eventType="touchUpInside" id="UQk-nl-1a5"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Список команд" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGd-YF-v0c">
                                         <rect key="frame" x="123" y="20" width="130.5" height="20.5"/>
@@ -139,6 +143,9 @@
                                 <state key="normal" title="ДОБАВИТЬ КОМАНДУ">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addTeamBtnWasPressed:" destination="0m7-o0-1Yc" eventType="touchUpInside" id="PrP-Sl-x6k"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tFM-Mj-3gi">
                                 <rect key="frame" x="0.0" y="387" width="375" height="230"/>
@@ -147,11 +154,11 @@
                                     <constraint firstAttribute="height" constant="230" id="3Fo-aJ-kkb"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="dcb-Il-M3S">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SetUpCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SetUpCell" rowHeight="50" id="dcb-Il-M3S" customClass="TeamSetUpCell" customModule="debat_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dcb-Il-M3S" id="JEL-WX-pyP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="y1V-0H-61i">
@@ -187,6 +194,10 @@
                                                 <constraint firstItem="y1V-0H-61i" firstAttribute="centerY" secondItem="JEL-WX-pyP" secondAttribute="centerY" id="nky-DF-FEW"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="teamName" destination="Adg-M6-qGo" id="yWV-7V-KGl"/>
+                                            <outlet property="teamScore" destination="ZRo-V8-bP8" id="fiz-tP-wi3"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -243,6 +254,11 @@
                             <constraint firstItem="fdj-eI-wte" firstAttribute="top" secondItem="H2z-Ja-6h2" secondAttribute="bottom" id="tJ7-mB-j2c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="tFM-Mj-3gi" id="v73-il-6Kx"/>
+                        <outlet property="teamName" destination="uoq-cJ-k5C" id="06G-ig-Tx8"/>
+                        <outlet property="teamScore" destination="gFq-Hn-yTL" id="Jcg-XR-5pz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QhF-kG-xpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

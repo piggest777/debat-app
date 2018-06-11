@@ -18,7 +18,13 @@ class StartDebateVC: UIViewController {
     @IBAction func startGameBtnWasPressed(_ sender: Any) {
     }
     
-    @IBOutlet weak var teamSetBtnWasPressed: UIButton!
+    
+    
+    @IBAction func setUpTeamBtnWasPressed(_ sender: Any) {
+        
+        performSegue(withIdentifier: "SetUpTeamVC", sender: nil)
+    }
+  
 
 
 }

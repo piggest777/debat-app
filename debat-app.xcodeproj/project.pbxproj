@@ -14,6 +14,7 @@
 		B54E9C3F20CEB65D001BE3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C3E20CEB65D001BE3EF /* Assets.xcassets */; };
 		B54E9C4220CEB65D001BE3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C4020CEB65D001BE3EF /* LaunchScreen.storyboard */; };
 		B54E9C4B20CEBCD3001BE3EF /* SetUpTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */; };
+		B5FFEE4F20CEE54C009B5DFD /* TeamSetUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFEE4E20CEE54C009B5DFD /* TeamSetUpCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B54E9C4120CEB65D001BE3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B54E9C4320CEB65D001BE3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpTeamVC.swift; sourceTree = "<group>"; };
+		B5FFEE4E20CEE54C009B5DFD /* TeamSetUpCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamSetUpCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		B54E9C3320CEB65D001BE3EF /* debat-app */ = {
 			isa = PBXGroup;
 			children = (
+				B5FFEE4D20CEE501009B5DFD /* View */,
 				B54E9C4920CEBC82001BE3EF /* Controllers */,
 				B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */,
 				B54E9C3820CEB65D001BE3EF /* Main.storyboard */,
@@ -76,6 +79,14 @@
 				B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B5FFEE4D20CEE501009B5DFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5FFEE4E20CEE54C009B5DFD /* TeamSetUpCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */,
+				B5FFEE4F20CEE54C009B5DFD /* TeamSetUpCell.swift in Sources */,
 				B54E9C4B20CEBCD3001BE3EF /* SetUpTeamVC.swift in Sources */,
 				B54E9C3D20CEB65D001BE3EF /* debat_app.xcdatamodeld in Sources */,
 				B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */,
@@ -322,6 +334,7 @@
 				B54E9C4820CEB65D001BE3EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
