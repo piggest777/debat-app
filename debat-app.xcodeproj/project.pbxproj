@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B504CD1920D5B90800619DB7 /* Round1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B504CD1820D5B90800619DB7 /* Round1VC.swift */; };
+		B504CD1B20D5C8FE00619DB7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B504CD1A20D5C8FE00619DB7 /* TabBarController.swift */; };
+		B539BB5B20D56CEA00024A54 /* TeamResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539BB5A20D56CEA00024A54 /* TeamResultCell.swift */; };
 		B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */; };
 		B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */; };
 		B54E9C3A20CEB65D001BE3EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C3820CEB65D001BE3EF /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B504CD1820D5B90800619DB7 /* Round1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Round1VC.swift; sourceTree = "<group>"; };
+		B504CD1A20D5C8FE00619DB7 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B539BB5A20D56CEA00024A54 /* TeamResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamResultCell.swift; sourceTree = "<group>"; };
 		B54E9C3120CEB65D001BE3EF /* debat-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "debat-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDebateVC.swift; sourceTree = "<group>"; };
@@ -41,6 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B504CD1520D5B36700619DB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		B54E9C2820CEB65D001BE3EF = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +73,7 @@
 		B54E9C3320CEB65D001BE3EF /* debat-app */ = {
 			isa = PBXGroup;
 			children = (
+				B504CD1520D5B36700619DB7 /* Model */,
 				B5FFEE4D20CEE501009B5DFD /* View */,
 				B54E9C4920CEBC82001BE3EF /* Controllers */,
 				B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */,
@@ -77,6 +91,8 @@
 			children = (
 				B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */,
 				B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */,
+				B504CD1820D5B90800619DB7 /* Round1VC.swift */,
+				B504CD1A20D5C8FE00619DB7 /* TabBarController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -85,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				B5FFEE4E20CEE54C009B5DFD /* TeamSetUpCell.swift */,
+				B539BB5A20D56CEA00024A54 /* TeamResultCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -163,9 +180,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */,
+				B504CD1B20D5C8FE00619DB7 /* TabBarController.swift in Sources */,
 				B5FFEE4F20CEE54C009B5DFD /* TeamSetUpCell.swift in Sources */,
 				B54E9C4B20CEBCD3001BE3EF /* SetUpTeamVC.swift in Sources */,
+				B539BB5B20D56CEA00024A54 /* TeamResultCell.swift in Sources */,
 				B54E9C3D20CEB65D001BE3EF /* debat_app.xcdatamodeld in Sources */,
+				B504CD1920D5B90800619DB7 /* Round1VC.swift in Sources */,
 				B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

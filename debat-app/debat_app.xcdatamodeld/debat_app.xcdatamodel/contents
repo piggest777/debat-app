@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Scores" representedClassName="Scores" syncable="YES" codeGenerationType="class">
+        <attribute name="konkurs1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="konkurs2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="konkurs3" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="konkurs4" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numberOfRound" attributeType="Integer 32" minValueString="1" maxValueString="4" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="scores" inverseEntity="Team" syncable="YES"/>
+    </entity>
     <entity name="Team" representedClassName="Team" syncable="YES" codeGenerationType="class">
-        <attribute name="finalScore" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="finalScore" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="scores" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Scores" inverseName="team" inverseEntity="Scores" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Team" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Scores" positionX="-2448" positionY="-313" width="198" height="133"/>
+        <element name="Team" positionX="-2736" positionY="-243" width="128" height="88"/>
     </elements>
 </model>
