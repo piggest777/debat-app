@@ -1,0 +1,6 @@
+framework module Pods_debat_app {
+  umbrella header "Pods-debat-app-umbrella.h"
+
+  export *
+  module * { export * }
+}
