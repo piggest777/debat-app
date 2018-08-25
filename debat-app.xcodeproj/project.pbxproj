@@ -10,6 +10,9 @@
 		ACE742ECEF0255E945AC730B /* Pods_debat_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AAE5AC8E252255F8A94CE71 /* Pods_debat_app.framework */; };
 		B504CD1920D5B90800619DB7 /* Round1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B504CD1820D5B90800619DB7 /* Round1VC.swift */; };
 		B504CD1B20D5C8FE00619DB7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B504CD1A20D5C8FE00619DB7 /* TabBarController.swift */; };
+		B51CE79621316ECC00BDE606 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CE79521316ECC00BDE606 /* DataService.swift */; };
+		B51CE79821316EDD00BDE606 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CE79721316EDD00BDE606 /* AuthService.swift */; };
+		B51CE79A21318C0B00BDE606 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CE79921318C0B00BDE606 /* AuthVC.swift */; };
 		B539BB5B20D56CEA00024A54 /* TeamResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539BB5A20D56CEA00024A54 /* TeamResultCell.swift */; };
 		B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */; };
 		B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */; };
@@ -18,6 +21,7 @@
 		B54E9C3F20CEB65D001BE3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C3E20CEB65D001BE3EF /* Assets.xcassets */; };
 		B54E9C4220CEB65D001BE3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C4020CEB65D001BE3EF /* LaunchScreen.storyboard */; };
 		B54E9C4B20CEBCD3001BE3EF /* SetUpTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */; };
+		B59DEDF921316766003942DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B59DEDF821316766003942DE /* GoogleService-Info.plist */; };
 		B5FFEE4F20CEE54C009B5DFD /* TeamSetUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFEE4E20CEE54C009B5DFD /* TeamSetUpCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,11 @@
 		B19319BAE7D98C74EC096F3A /* Pods-debat-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debat-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-debat-app/Pods-debat-app.release.xcconfig"; sourceTree = "<group>"; };
 		B504CD1820D5B90800619DB7 /* Round1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Round1VC.swift; sourceTree = "<group>"; };
 		B504CD1A20D5C8FE00619DB7 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B51CE7922131698900BDE606 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		B51CE7932131698900BDE606 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B51CE79521316ECC00BDE606 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B51CE79721316EDD00BDE606 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B51CE79921318C0B00BDE606 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		B539BB5A20D56CEA00024A54 /* TeamResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamResultCell.swift; sourceTree = "<group>"; };
 		B54E9C3120CEB65D001BE3EF /* debat-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "debat-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +46,7 @@
 		B54E9C4120CEB65D001BE3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B54E9C4320CEB65D001BE3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpTeamVC.swift; sourceTree = "<group>"; };
+		B59DEDF821316766003942DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B5FFEE4E20CEE54C009B5DFD /* TeamSetUpCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamSetUpCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +86,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		B51CE79421316EAA00BDE606 /* Serveces */ = {
+			isa = PBXGroup;
+			children = (
+				B51CE79521316ECC00BDE606 /* DataService.swift */,
+				B51CE79721316EDD00BDE606 /* AuthService.swift */,
+			);
+			name = Serveces;
+			sourceTree = "<group>";
+		};
 		B54E9C2820CEB65D001BE3EF = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +116,7 @@
 		B54E9C3320CEB65D001BE3EF /* debat-app */ = {
 			isa = PBXGroup;
 			children = (
+				B51CE79421316EAA00BDE606 /* Serveces */,
 				B504CD1520D5B36700619DB7 /* Model */,
 				B5FFEE4D20CEE501009B5DFD /* View */,
 				B54E9C4920CEBC82001BE3EF /* Controllers */,
@@ -106,6 +126,7 @@
 				B54E9C4020CEB65D001BE3EF /* LaunchScreen.storyboard */,
 				B54E9C4320CEB65D001BE3EF /* Info.plist */,
 				B54E9C3B20CEB65D001BE3EF /* debat_app.xcdatamodeld */,
+				B59DEDF821316766003942DE /* GoogleService-Info.plist */,
 			);
 			path = "debat-app";
 			sourceTree = "<group>";
@@ -117,6 +138,7 @@
 				B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */,
 				B504CD1820D5B90800619DB7 /* Round1VC.swift */,
 				B504CD1A20D5C8FE00619DB7 /* TabBarController.swift */,
+				B51CE79921318C0B00BDE606 /* AuthVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -142,6 +164,7 @@
 				B54E9C2E20CEB65D001BE3EF /* Frameworks */,
 				B54E9C2F20CEB65D001BE3EF /* Resources */,
 				705694026229DD998FBFD0BD /* [CP] Embed Pods Frameworks */,
+				A1B9013AF499FCB931DE642B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,12 +182,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Denis Rakitin";
 				TargetAttributes = {
 					B54E9C3020CEB65D001BE3EF = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 9X329BRT6C;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -193,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54E9C4220CEB65D001BE3EF /* LaunchScreen.storyboard in Resources */,
+				B59DEDF921316766003942DE /* GoogleService-Info.plist in Resources */,
 				B54E9C3F20CEB65D001BE3EF /* Assets.xcassets in Resources */,
 				B54E9C3A20CEB65D001BE3EF /* Main.storyboard in Resources */,
 			);
@@ -226,14 +251,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-debat-app/Pods-debat-app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -243,6 +272,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-debat-app/Pods-debat-app-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A1B9013AF499FCB931DE642B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-debat-app/Pods-debat-app-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-debat-app/Pods-debat-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -250,12 +297,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51CE79621316ECC00BDE606 /* DataService.swift in Sources */,
 				B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */,
 				B504CD1B20D5C8FE00619DB7 /* TabBarController.swift in Sources */,
 				B5FFEE4F20CEE54C009B5DFD /* TeamSetUpCell.swift in Sources */,
 				B54E9C4B20CEBCD3001BE3EF /* SetUpTeamVC.swift in Sources */,
+				B51CE79A21318C0B00BDE606 /* AuthVC.swift in Sources */,
 				B539BB5B20D56CEA00024A54 /* TeamResultCell.swift in Sources */,
 				B54E9C3D20CEB65D001BE3EF /* debat_app.xcdatamodeld in Sources */,
+				B51CE79821316EDD00BDE606 /* AuthService.swift in Sources */,
 				B504CD1920D5B90800619DB7 /* Round1VC.swift in Sources */,
 				B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */,
 			);
@@ -268,6 +318,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B54E9C3920CEB65D001BE3EF /* Base */,
+				B51CE7922131698900BDE606 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -276,6 +327,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B54E9C4120CEB65D001BE3EF /* Base */,
+				B51CE7932131698900BDE606 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -287,21 +339,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -324,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -338,21 +399,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -369,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -389,7 +459,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Piggy-Farm.debat-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -405,7 +476,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Piggy-Farm.debat-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

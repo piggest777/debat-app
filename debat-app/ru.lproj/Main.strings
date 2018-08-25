@@ -1,0 +1,147 @@
+
+/* Class = "UILabel"; text = "45.5"; ObjectID = "0Af-ae-l2Q"; */
+"0Af-ae-l2Q.text" = "45.5";
+
+/* Class = "UIButton"; normalTitle = "ИГРАТЬ"; ObjectID = "1bZ-0N-VsT"; */
+"1bZ-0N-VsT.normalTitle" = "ИГРАТЬ";
+
+/* Class = "UILabel"; text = "450"; ObjectID = "1fS-fN-Z2A"; */
+"1fS-fN-Z2A.text" = "450";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "1n3-U7-3Zg"; */
+"1n3-U7-3Zg.title" = "Item";
+
+/* Class = "UILabel"; text = "Команда № 2"; ObjectID = "2Dr-JR-CrZ"; */
+"2Dr-JR-CrZ.text" = "Команда № 2";
+
+/* Class = "UILabel"; text = "60.1"; ObjectID = "6WB-FK-EtU"; */
+"6WB-FK-EtU.text" = "60.1";
+
+/* Class = "UILabel"; text = "55.5"; ObjectID = "8gF-es-wIc"; */
+"8gF-es-wIc.text" = "55.5";
+
+/* Class = "UILabel"; text = "Неолимпийская сборная ямайки"; ObjectID = "Adg-M6-qGo"; */
+"Adg-M6-qGo.text" = "Неолимпийская сборная ямайки";
+
+/* Class = "UILabel"; text = "Неолимпийская сборная ямайки"; ObjectID = "B5O-K7-QH2"; */
+"B5O-K7-QH2.text" = "Неолимпийская сборная ямайки";
+
+/* Class = "UILabel"; text = "60.1"; ObjectID = "Crs-d4-GVY"; */
+"Crs-d4-GVY.text" = "60.1";
+
+/* Class = "UIButton"; normalTitle = "НАСТРОИТЬ КОМАНДЫ"; ObjectID = "DrI-kb-fYz"; */
+"DrI-kb-fYz.normalTitle" = "НАСТРОИТЬ КОМАНДЫ";
+
+/* Class = "UILabel"; text = "Название команды"; ObjectID = "ETi-8R-cOF"; */
+"ETi-8R-cOF.text" = "Название команды";
+
+/* Class = "UILabel"; text = "55.5"; ObjectID = "FhA-Hz-zjN"; */
+"FhA-Hz-zjN.text" = "55.5";
+
+/* Class = "UILabel"; text = "Команда № 2"; ObjectID = "JAE-kQ-4Or"; */
+"JAE-kQ-4Or.text" = "Команда № 2";
+
+/* Class = "UILabel"; text = "45.5"; ObjectID = "LD4-CC-h4r"; */
+"LD4-CC-h4r.text" = "45.5";
+
+/* Class = "UINavigationItem"; title = "Время дебатов!"; ObjectID = "Lac-Wm-EHG"; */
+"Lac-Wm-EHG.title" = "Время дебатов!";
+
+/* Class = "UILabel"; text = "450"; ObjectID = "Mgx-68-KWm"; */
+"Mgx-68-KWm.text" = "450";
+
+/* Class = "UILabel"; text = "Команда № 2"; ObjectID = "NiF-8k-JC3"; */
+"NiF-8k-JC3.text" = "Команда № 2";
+
+/* Class = "UILabel"; text = "60.1"; ObjectID = "OcH-Mv-7qL"; */
+"OcH-Mv-7qL.text" = "60.1";
+
+/* Class = "UIBarButtonItem"; title = "back"; ObjectID = "RC3-XB-yIH"; */
+"RC3-XB-yIH.title" = "back";
+
+/* Class = "UILabel"; text = "Неолимпийская сборная ямайки"; ObjectID = "T4X-9H-9MH"; */
+"T4X-9H-9MH.text" = "Неолимпийская сборная ямайки";
+
+/* Class = "UILabel"; text = "Неолимпийская сборная ямайки"; ObjectID = "TNV-Rc-qA4"; */
+"TNV-Rc-qA4.text" = "Неолимпийская сборная ямайки";
+
+/* Class = "UIButton"; normalTitle = "DEL ALL"; ObjectID = "WwI-aq-xQm"; */
+"WwI-aq-xQm.normalTitle" = "DEL ALL";
+
+/* Class = "UILabel"; text = "55.5"; ObjectID = "Y53-p6-naU"; */
+"Y53-p6-naU.text" = "55.5";
+
+/* Class = "UILabel"; text = "Команда № 1"; ObjectID = "Yld-NR-VUa"; */
+"Yld-NR-VUa.text" = "Команда № 1";
+
+/* Class = "UILabel"; text = "450"; ObjectID = "ZRo-V8-bP8"; */
+"ZRo-V8-bP8.text" = "450";
+
+/* Class = "UIButton"; normalTitle = "ДОБАВИТЬ КОМАНДУ"; ObjectID = "ZvO-Rv-6ZS"; */
+"ZvO-Rv-6ZS.normalTitle" = "ДОБАВИТЬ КОМАНДУ";
+
+/* Class = "UILabel"; text = "Неолимпийская сборная ямайки"; ObjectID = "bBd-IO-20f"; */
+"bBd-IO-20f.text" = "Неолимпийская сборная ямайки";
+
+/* Class = "UILabel"; text = "55.5"; ObjectID = "bFp-fg-2s3"; */
+"bFp-fg-2s3.text" = "55.5";
+
+/* Class = "UILabel"; text = "Команда № 1"; ObjectID = "cqR-eR-Zec"; */
+"cqR-eR-Zec.text" = "Команда № 1";
+
+/* Class = "UILabel"; text = "40.0"; ObjectID = "ePO-8C-xy6"; */
+"ePO-8C-xy6.text" = "40.0";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "eWw-fE-5jc"; */
+"eWw-fE-5jc.title" = "Item";
+
+/* Class = "UILabel"; text = "450"; ObjectID = "fiE-v9-spw"; */
+"fiE-v9-spw.text" = "450";
+
+/* Class = "UILabel"; text = "Список команд"; ObjectID = "gGd-YF-v0c"; */
+"gGd-YF-v0c.text" = "Список команд";
+
+/* Class = "UILabel"; text = "45.5"; ObjectID = "gtW-YS-xzE"; */
+"gtW-YS-xzE.text" = "45.5";
+
+/* Class = "UILabel"; text = "Команда № 1"; ObjectID = "iDX-VM-s6R"; */
+"iDX-VM-s6R.text" = "Команда № 1";
+
+/* Class = "UINavigationItem"; title = "Игра 1"; ObjectID = "iSj-ma-uHG"; */
+"iSj-ma-uHG.title" = "Игра 1";
+
+/* Class = "UILabel"; text = "45.5"; ObjectID = "j9p-aX-gxh"; */
+"j9p-aX-gxh.text" = "45.5";
+
+/* Class = "UILabel"; text = "60.1"; ObjectID = "kZB-U6-ByT"; */
+"kZB-U6-ByT.text" = "60.1";
+
+/* Class = "UILabel"; text = "Команда № 2"; ObjectID = "kdv-s1-Y8A"; */
+"kdv-s1-Y8A.text" = "Команда № 2";
+
+/* Class = "UILabel"; text = "450"; ObjectID = "kgM-5D-8m4"; */
+"kgM-5D-8m4.text" = "450";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "lHb-Jy-ZmT"; */
+"lHb-Jy-ZmT.title" = "Item";
+
+/* Class = "UILabel"; text = "40.0"; ObjectID = "p3D-Pf-T5D"; */
+"p3D-Pf-T5D.text" = "40.0";
+
+/* Class = "UILabel"; text = "40.0"; ObjectID = "sRA-ou-Ar4"; */
+"sRA-ou-Ar4.text" = "40.0";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "vha-C7-pds"; */
+"vha-C7-pds.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "НАЗАД"; ObjectID = "wiX-ku-hCs"; */
+"wiX-ku-hCs.normalTitle" = "НАЗАД";
+
+/* Class = "UILabel"; text = "40.0"; ObjectID = "xcd-Da-dZg"; */
+"xcd-Da-dZg.text" = "40.0";
+
+/* Class = "UILabel"; text = "Баллы"; ObjectID = "xcj-WI-M0v"; */
+"xcj-WI-M0v.text" = "Баллы";
+
+/* Class = "UILabel"; text = "Команда № 1"; ObjectID = "ya7-Vd-EiD"; */
+"ya7-Vd-EiD.text" = "Команда № 1";
