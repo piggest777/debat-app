@@ -13,6 +13,9 @@
 		B51CE79621316ECC00BDE606 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CE79521316ECC00BDE606 /* DataService.swift */; };
 		B51CE79821316EDD00BDE606 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CE79721316EDD00BDE606 /* AuthService.swift */; };
 		B51CE79A21318C0B00BDE606 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CE79921318C0B00BDE606 /* AuthVC.swift */; };
+		B521BE2F213C6EA000165B11 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521BE2E213C6EA000165B11 /* UIViewExt.swift */; };
+		B521BE33213C6F0900165B11 /* StringCheckIsIntExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521BE32213C6F0900165B11 /* StringCheckIsIntExt.swift */; };
+		B521BE35213CA46600165B11 /* TapToDismissKeyboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521BE34213CA46600165B11 /* TapToDismissKeyboardExt.swift */; };
 		B539BB5B20D56CEA00024A54 /* TeamResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539BB5A20D56CEA00024A54 /* TeamResultCell.swift */; };
 		B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */; };
 		B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */; };
@@ -21,6 +24,7 @@
 		B54E9C3F20CEB65D001BE3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C3E20CEB65D001BE3EF /* Assets.xcassets */; };
 		B54E9C4220CEB65D001BE3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C4020CEB65D001BE3EF /* LaunchScreen.storyboard */; };
 		B54E9C4B20CEBCD3001BE3EF /* SetUpTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */; };
+		B55CD04721349386003372F5 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55CD04621349386003372F5 /* Team.swift */; };
 		B59DEDF921316766003942DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B59DEDF821316766003942DE /* GoogleService-Info.plist */; };
 		B5FFEE4F20CEE54C009B5DFD /* TeamSetUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FFEE4E20CEE54C009B5DFD /* TeamSetUpCell.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +40,9 @@
 		B51CE79521316ECC00BDE606 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		B51CE79721316EDD00BDE606 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		B51CE79921318C0B00BDE606 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		B521BE2E213C6EA000165B11 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExt.swift; path = "../../breakpoint-app/breakpoint-app/Ext/UIViewExt.swift"; sourceTree = "<group>"; };
+		B521BE32213C6F0900165B11 /* StringCheckIsIntExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCheckIsIntExt.swift; sourceTree = "<group>"; };
+		B521BE34213CA46600165B11 /* TapToDismissKeyboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapToDismissKeyboardExt.swift; sourceTree = "<group>"; };
 		B539BB5A20D56CEA00024A54 /* TeamResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamResultCell.swift; sourceTree = "<group>"; };
 		B54E9C3120CEB65D001BE3EF /* debat-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "debat-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +53,7 @@
 		B54E9C4120CEB65D001BE3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B54E9C4320CEB65D001BE3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpTeamVC.swift; sourceTree = "<group>"; };
+		B55CD04621349386003372F5 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		B59DEDF821316766003942DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B5FFEE4E20CEE54C009B5DFD /* TeamSetUpCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamSetUpCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +90,7 @@
 		B504CD1520D5B36700619DB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B55CD04621349386003372F5 /* Team.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -93,6 +102,16 @@
 				B51CE79721316EDD00BDE606 /* AuthService.swift */,
 			);
 			name = Serveces;
+			sourceTree = "<group>";
+		};
+		B521BE30213C6EA900165B11 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				B521BE2E213C6EA000165B11 /* UIViewExt.swift */,
+				B521BE32213C6F0900165B11 /* StringCheckIsIntExt.swift */,
+				B521BE34213CA46600165B11 /* TapToDismissKeyboardExt.swift */,
+			);
+			name = Extention;
 			sourceTree = "<group>";
 		};
 		B54E9C2820CEB65D001BE3EF = {
@@ -116,6 +135,7 @@
 		B54E9C3320CEB65D001BE3EF /* debat-app */ = {
 			isa = PBXGroup;
 			children = (
+				B521BE30213C6EA900165B11 /* Extention */,
 				B51CE79421316EAA00BDE606 /* Serveces */,
 				B504CD1520D5B36700619DB7 /* Model */,
 				B5FFEE4D20CEE501009B5DFD /* View */,
@@ -297,11 +317,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B521BE2F213C6EA000165B11 /* UIViewExt.swift in Sources */,
+				B55CD04721349386003372F5 /* Team.swift in Sources */,
+				B521BE35213CA46600165B11 /* TapToDismissKeyboardExt.swift in Sources */,
 				B51CE79621316ECC00BDE606 /* DataService.swift in Sources */,
 				B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */,
 				B504CD1B20D5C8FE00619DB7 /* TabBarController.swift in Sources */,
 				B5FFEE4F20CEE54C009B5DFD /* TeamSetUpCell.swift in Sources */,
 				B54E9C4B20CEBCD3001BE3EF /* SetUpTeamVC.swift in Sources */,
+				B521BE33213C6F0900165B11 /* StringCheckIsIntExt.swift in Sources */,
 				B51CE79A21318C0B00BDE606 /* AuthVC.swift in Sources */,
 				B539BB5B20D56CEA00024A54 /* TeamResultCell.swift in Sources */,
 				B54E9C3D20CEB65D001BE3EF /* debat_app.xcdatamodeld in Sources */,
