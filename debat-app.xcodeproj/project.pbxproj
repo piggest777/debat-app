@@ -16,12 +16,13 @@
 		B521BE2F213C6EA000165B11 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521BE2E213C6EA000165B11 /* UIViewExt.swift */; };
 		B521BE33213C6F0900165B11 /* StringCheckIsIntExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521BE32213C6F0900165B11 /* StringCheckIsIntExt.swift */; };
 		B521BE35213CA46600165B11 /* TapToDismissKeyboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521BE34213CA46600165B11 /* TapToDismissKeyboardExt.swift */; };
+		B521BE37213D3A4200165B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B521BE36213D3A4200165B11 /* Assets.xcassets */; };
+		B521BE3A213D7C5400165B11 /* RoundScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521BE39213D7C5400165B11 /* RoundScore.swift */; };
 		B539BB5B20D56CEA00024A54 /* TeamResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539BB5A20D56CEA00024A54 /* TeamResultCell.swift */; };
 		B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */; };
 		B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */; };
 		B54E9C3A20CEB65D001BE3EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C3820CEB65D001BE3EF /* Main.storyboard */; };
 		B54E9C3D20CEB65D001BE3EF /* debat_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3B20CEB65D001BE3EF /* debat_app.xcdatamodeld */; };
-		B54E9C3F20CEB65D001BE3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C3E20CEB65D001BE3EF /* Assets.xcassets */; };
 		B54E9C4220CEB65D001BE3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C4020CEB65D001BE3EF /* LaunchScreen.storyboard */; };
 		B54E9C4B20CEBCD3001BE3EF /* SetUpTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */; };
 		B55CD04721349386003372F5 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55CD04621349386003372F5 /* Team.swift */; };
@@ -43,13 +44,15 @@
 		B521BE2E213C6EA000165B11 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExt.swift; path = "../../breakpoint-app/breakpoint-app/Ext/UIViewExt.swift"; sourceTree = "<group>"; };
 		B521BE32213C6F0900165B11 /* StringCheckIsIntExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCheckIsIntExt.swift; sourceTree = "<group>"; };
 		B521BE34213CA46600165B11 /* TapToDismissKeyboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapToDismissKeyboardExt.swift; sourceTree = "<group>"; };
+		B521BE36213D3A4200165B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		B521BE38213D4D4E00165B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B521BE39213D7C5400165B11 /* RoundScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundScore.swift; sourceTree = "<group>"; };
 		B539BB5A20D56CEA00024A54 /* TeamResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamResultCell.swift; sourceTree = "<group>"; };
 		B54E9C3120CEB65D001BE3EF /* debat-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "debat-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDebateVC.swift; sourceTree = "<group>"; };
 		B54E9C3920CEB65D001BE3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B54E9C3C20CEB65D001BE3EF /* debat_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = debat_app.xcdatamodel; sourceTree = "<group>"; };
-		B54E9C3E20CEB65D001BE3EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B54E9C4120CEB65D001BE3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B54E9C4320CEB65D001BE3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54E9C4A20CEBCD3001BE3EF /* SetUpTeamVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpTeamVC.swift; sourceTree = "<group>"; };
@@ -91,17 +94,18 @@
 			isa = PBXGroup;
 			children = (
 				B55CD04621349386003372F5 /* Team.swift */,
+				B521BE39213D7C5400165B11 /* RoundScore.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		B51CE79421316EAA00BDE606 /* Serveces */ = {
+		B51CE79421316EAA00BDE606 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				B51CE79521316ECC00BDE606 /* DataService.swift */,
 				B51CE79721316EDD00BDE606 /* AuthService.swift */,
 			);
-			name = Serveces;
+			name = Services;
 			sourceTree = "<group>";
 		};
 		B521BE30213C6EA900165B11 /* Extention */ = {
@@ -117,6 +121,7 @@
 		B54E9C2820CEB65D001BE3EF = {
 			isa = PBXGroup;
 			children = (
+				B521BE36213D3A4200165B11 /* Assets.xcassets */,
 				B54E9C3320CEB65D001BE3EF /* debat-app */,
 				B54E9C3220CEB65D001BE3EF /* Products */,
 				167A43879E8D840318EE9441 /* Pods */,
@@ -136,13 +141,13 @@
 			isa = PBXGroup;
 			children = (
 				B521BE30213C6EA900165B11 /* Extention */,
-				B51CE79421316EAA00BDE606 /* Serveces */,
+				B51CE79421316EAA00BDE606 /* Services */,
 				B504CD1520D5B36700619DB7 /* Model */,
 				B5FFEE4D20CEE501009B5DFD /* View */,
 				B54E9C4920CEBC82001BE3EF /* Controllers */,
 				B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */,
 				B54E9C3820CEB65D001BE3EF /* Main.storyboard */,
-				B54E9C3E20CEB65D001BE3EF /* Assets.xcassets */,
+				B521BE38213D4D4E00165B11 /* Assets.xcassets */,
 				B54E9C4020CEB65D001BE3EF /* LaunchScreen.storyboard */,
 				B54E9C4320CEB65D001BE3EF /* Info.plist */,
 				B54E9C3B20CEB65D001BE3EF /* debat_app.xcdatamodeld */,
@@ -238,7 +243,7 @@
 			files = (
 				B54E9C4220CEB65D001BE3EF /* LaunchScreen.storyboard in Resources */,
 				B59DEDF921316766003942DE /* GoogleService-Info.plist in Resources */,
-				B54E9C3F20CEB65D001BE3EF /* Assets.xcassets in Resources */,
+				B521BE37213D3A4200165B11 /* Assets.xcassets in Resources */,
 				B54E9C3A20CEB65D001BE3EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +337,7 @@
 				B51CE79821316EDD00BDE606 /* AuthService.swift in Sources */,
 				B504CD1920D5B90800619DB7 /* Round1VC.swift in Sources */,
 				B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */,
+				B521BE3A213D7C5400165B11 /* RoundScore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

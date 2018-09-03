@@ -18,6 +18,7 @@ class DataService {
     var teamArray = [String]()
     
     
+    
     private var _REF_USERS = DB_BASE.child("users")
     private var _REF_TEAMS = DB_BASE.child("teams")
     
@@ -101,8 +102,6 @@ class DataService {
                 
                 teamNameArray.append(currientTeamNameInBase)
             }
-            print(teamNameArray)
-            
             if teamNameArray.contains(name) {
                 handler(true)
             } else {
@@ -147,8 +146,28 @@ class DataService {
                 }
                 
             }
-            print("ключ команды : \(teamKey)")
             completionHandler(teamKey)
+        }
+    }
+    
+    func getTeamsRoundScore(forTeam team: TeamSetings, round: Int, handler: @escaping (RoundScores)->()) {
+        getTeamAutoId(forTeam: team) { (returnedKey) in
+            let key = returnedKey
+            
+           
+            self.REF_TEAMS.child(key).child("\(round)RoundScore").observe(.value, with: { (roundResultDataSnapshot) in
+                guard let roundResultDataSnapshot = roundResultDataSnapshot.children.allObjects as? [DataSnapshot] else {return}
+                
+                let task1 = roundResultDataSnapshot[0].value as! Int
+                let task2 = roundResultDataSnapshot[1].value as! Int
+                let task3 = roundResultDataSnapshot[2].value as! Int
+                let task4 = roundResultDataSnapshot[3].value as! Int
+                
+                let teamRoundScores = RoundScores(task1: task1, task2: task2, task3: task3, task4: task4)
+                
+                handler(teamRoundScores)
+            })
+            
         }
     }
     
@@ -164,5 +183,8 @@ class DataService {
             }
         }
     }
+    
+    
+  
     
 }

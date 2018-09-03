@@ -25,22 +25,30 @@ class TeamResultCell: UITableViewCell {
     @IBOutlet weak var konkurs3Result: UILabel!
     
     @IBOutlet weak var konkurs4Result: UILabel!
-    
-    @IBOutlet weak var opositeTeamN1: UILabel!
-    
-    @IBOutlet weak var opositeTeamN2: UILabel!
+//
+//    @IBOutlet weak var opositeTeamN1: UILabel!
+//    
+//    @IBOutlet weak var opositeTeamN2: UILabel!
     
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setUpView()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setUpView()  {
+        doneIndicator.layer.borderWidth = 2.0
+        doneIndicator.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        doneIndicator.layer.cornerRadius = doneIndicator.frame.size.height/2
+        doneIndicator.clipsToBounds = true
+        
     }
 
 }

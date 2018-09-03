@@ -30,6 +30,7 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         tableView.delegate = self
         tableView.dataSource = self
+        self.hideKeyboardWhenTappedAround()
 
     }
     
@@ -40,7 +41,7 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         DataService.instance.getTeamsArray(completionHandler: { (returnedArray) in
             self.teamArray = returnedArray
             self.tableView.reloadData()
-            self.hideKeyboardWhenTappedAround()
+
             
         })
         
@@ -116,13 +117,12 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
 
         DataService.instance.getTeamAutoId(forTeam: self.teamArray[indexPath.row], completionHandler: { (returnedId) in
             let id = returnedId
-            print("возвращаемы ид: \(id)")
             DataService.instance.removeTeamFromFirebase(forId: id, completionHandler: { (success) in
                 if success {
                     print("success")
                     DataService.instance.getTeamsArray(completionHandler: { (returnedTeamArray) in
                        self.teamArray = returnedTeamArray
-                        self.tableView.deleteRows(at: [indexPath], with: .fade)
+                        self.tableView.deleteRows(at: [indexPath], with: .top)
 
                     })
                     
