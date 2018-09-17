@@ -19,11 +19,16 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var noTeamView: UIView!
+    var spinner: UIActivityIndicatorView?
+    
+    var screenSize = UIScreen.main.bounds
+    
  
     
     //var
     
-    var teamArray = [TeamSetings]()
+//    var teamArray = [TeamSetings]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,10 +42,12 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        
+        addSpinner()
         DataService.instance.getTeamsArray(completionHandler: { (returnedArray) in
-            self.teamArray = returnedArray
+            TeamDataService.instance.teamArray = returnedArray
+            self.isTableHasValue()
             self.tableView.reloadData()
+            self.removeSpinner()
 
             
         })
@@ -80,10 +87,18 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                                 self.teamName.text = ""
                                 self.teamScore.text = ""
                                 
-                                DataService.instance.getTeamsArray(completionHandler: { (returnedArray) in
-                                    self.teamArray = returnedArray
-                                    self.tableView.reloadData()
+                                TeamDataService.instance.getTeamArray(handler: { (success) in
+                                    if success {
+                                        self.isTableHasValue()
+                                        self.tableView.reloadData()
+                                    }
                                 })
+//                                self.isTableHasValue()
+//                                self.tableView.reloadData()
+//                                DataService.instance.getTeamsArray(completionHandler: { (returnedArray) in
+//                                    self.teamArray = returnedArray
+//
+//                                })
                             }
                         }
                     }
@@ -115,14 +130,20 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     func deleteTeam(indexPath: IndexPath) {
 
-        DataService.instance.getTeamAutoId(forTeam: self.teamArray[indexPath.row], completionHandler: { (returnedId) in
+        DataService.instance.getTeamAutoId(forTeam: TeamDataService.instance.teamArray[indexPath.row], completionHandler: { (returnedId) in
             let id = returnedId
             DataService.instance.removeTeamFromFirebase(forId: id, completionHandler: { (success) in
                 if success {
                     print("success")
-                    DataService.instance.getTeamsArray(completionHandler: { (returnedTeamArray) in
-                       self.teamArray = returnedTeamArray
-                        self.tableView.deleteRows(at: [indexPath], with: .top)
+                    TeamDataService.instance.getTeamArray(handler: { (success) in
+                        if success {
+                            self.tableView.deleteRows(at: [indexPath], with: .top)
+                            self.isTableHasValue()
+                    }
+//                    DataService.instance.getTeamsArray(completionHandler: { (returnedTeamArray) in
+//                       TeamDataService.instance.teamArray = returnedTeamArray
+//                        self.tableView.deleteRows(at: [indexPath], with: .top)
+//                        self.isTableHasValue()
 
                     })
                     
@@ -137,7 +158,7 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return teamArray.count
+        return TeamDataService.instance.teamArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -145,7 +166,7 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         guard  let cell = tableView.dequeueReusableCell(withIdentifier: "SetUpCell", for: indexPath) as? TeamSetUpCell else {return UITableViewCell()}
         
         
-        let team = teamArray[indexPath.row]
+        let team = TeamDataService.instance.teamArray[indexPath.row]
         cell.teamName.text = team.name
         cell.teamScore.text = team.totalScore
         
@@ -170,12 +191,52 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     @IBAction func deleteAllTeamsBtnWasPressed(_ sender: Any) {
-        DataService.instance.REF_TEAMS.setValue(nil)
-        DataService.instance.getTeamsArray { (returnedTeamArray) in
-            self.teamArray = returnedTeamArray
-            self.tableView.reloadData()
+        DataService.instance.deleteObserversWhenDeleteAllTheTeam { (success) in
+            if success {
+                
+                DataService.instance.REF_TEAMS.setValue(nil)
+                TeamDataService.instance.getTeamArray(handler: { (success) in
+                    if success {
+                        self.isTableHasValue()
+                        self.tableView.reloadData()
+                    }
+                })
+//                self.isTableHasValue()
+//                self.tableView.reloadData()
+////                DataService.instance.getTeamsArray { (returnedTeamArray) in
+//                    self.teamArray = returnedTeamArray
+//                    self.isTableHasValue()
+//                    self.tableView.reloadData()
+//                }
             }
         }
+
+        }
+    
+    func isTableHasValue() {
+        if TeamDataService.instance.teamArray.count >= 1 {
+            self.noTeamView.isHidden = true
+        } else {
+            self.noTeamView.isHidden = false
+        }
+    }
+    
+    func addSpinner () {
+        spinner = UIActivityIndicatorView()
+        spinner?.center = CGPoint(x: (screenSize.width/2) - ((spinner?.frame.width)!/2), y: 150)
+        spinner?.activityIndicatorViewStyle = .whiteLarge
+        spinner?.color = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        spinner?.startAnimating()
+        tableView?.addSubview(spinner!)
+    }
+    
+    func removeSpinner() {
+        
+        if spinner != nil {
+            spinner?.removeFromSuperview()
+        }
+    }
+    
     }
 
 

@@ -154,8 +154,8 @@ class DataService {
         getTeamAutoId(forTeam: team) { (returnedKey) in
             let key = returnedKey
             
-           
-            self.REF_TEAMS.child(key).child("\(round)RoundScore").observe(.value, with: { (roundResultDataSnapshot) in
+            
+             self.REF_TEAMS.child(key).child("\(round)RoundScore").observe(.value, with: { (roundResultDataSnapshot) in
                 guard let roundResultDataSnapshot = roundResultDataSnapshot.children.allObjects as? [DataSnapshot] else {return}
                 
                 let task1 = roundResultDataSnapshot[0].value as! Int
@@ -168,6 +168,30 @@ class DataService {
                 handler(teamRoundScores)
             })
             
+        }
+    }
+    
+    func deleteObserversWhenDeleteAllTheTeam(handler: @escaping (Bool)->()){
+        
+        REF_TEAMS.observeSingleEvent(of: .value) { (teamsDataSnapshot) in
+            guard let teamsDataSnapshot = teamsDataSnapshot.children.allObjects as? [DataSnapshot] else {return}
+            
+            for team in teamsDataSnapshot {
+                let roundArray = [1,2,3,4]
+                
+                for round in roundArray {
+                    if team.hasChild("\(round)RoundScore"){
+                        let id = team.key
+                        print("удаление наблюдателся из команды с ключём \(id)")
+                        
+                        self.REF_TEAMS.child(id).child("\(round)RoundScore").removeAllObservers()
+                    }
+                    
+                }
+                
+            }
+            handler(true)
+            print("успешно удалены обозеватели")
         }
     }
     

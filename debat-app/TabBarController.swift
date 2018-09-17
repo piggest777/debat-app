@@ -19,6 +19,7 @@ class TabBarController: UITabBarController {
 
     @IBAction func backBtnWasPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+        DataService.instance.REF_TEAMS.removeAllObservers()
     }
 
 }

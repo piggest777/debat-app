@@ -13,7 +13,7 @@ class Round1VC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var teamArray = [TeamSetings]()
+//    var teamArray = [TeamSetings]()
     var spinner: UIActivityIndicatorView?
     var screenSize = UIScreen.main.bounds
     
@@ -28,15 +28,27 @@ class Round1VC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         addSpinner()
-        DataService.instance.getTeamsArray { (returnenedTeamsArray) in
-            self.teamArray = returnenedTeamsArray
-            self.initRoundScore1()
-            self.tableView.reloadData()
-            self.removeSpinner()
+        TeamDataService.instance.getTeamArray { (success) in
+            if success {
+                self.initRoundScore1(handler: { (success) in
+                    if success {
+                        self.tableView.reloadData()
+                        self.removeSpinner()
+                    }
+                })
+            }
+
         }
+//        DataService.instance.getTeamsArray { (returnenedTeamsArray) in
+//            TeamDataService.instance.teamArray = returnenedTeamsArray
+//            self.initRoundScore1()
+//            self.tableView.reloadData()
+//            self.removeSpinner()
+//        }
     }
     
-    func initRoundScore1 (){
+    
+    func initRoundScore1 (handler: @escaping (Bool)->()){
         DataService.instance.REF_TEAMS.observeSingleEvent(of: .value) { (teamsDataSnapshot) in
             guard let teamsDataSnapshot = teamsDataSnapshot.children.allObjects as? [DataSnapshot] else {return}
             
@@ -51,6 +63,7 @@ class Round1VC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     DataService.instance.REF_TEAMS.child(key).child("1RoundScore").updateChildValues(startScore)
                 }
             }
+            handler(true)
         }
     }
 
@@ -59,14 +72,14 @@ class Round1VC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return teamArray.count
+        return TeamDataService.instance.teamArray.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ResultCell") as? TeamResultCell else {return UITableViewCell()}
 
-        let team = teamArray[indexPath.row]
+        let team = TeamDataService.instance.teamArray[indexPath.row]
 
         cell.teamName.text = team.name
         cell.teamFinalScore.text = team.totalScore
@@ -81,6 +94,17 @@ class Round1VC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       guard let teamRoundScoreEditorVC = storyboard?.instantiateViewController(withIdentifier: "RoundTeamScoreEditor") as? AddTeamRoundScoreVC else {return}
+        let team = TeamDataService.instance.teamArray[indexPath.row]
+        DataService.instance.getTeamsRoundScore(forTeam: team, round: 1) { (returnedRoundScores) in
+            let roundScrores = returnedRoundScores
+            teamRoundScoreEditorVC.initTeamRoundScore(team: team, roundedScores: roundScrores)
+        }
+        
+        present(teamRoundScoreEditorVC, animated: true, completion: nil)
     }
 
     func addSpinner () {

@@ -10,15 +10,18 @@
 		ACE742ECEF0255E945AC730B /* Pods_debat_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AAE5AC8E252255F8A94CE71 /* Pods_debat_app.framework */; };
 		B504CD1920D5B90800619DB7 /* Round1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B504CD1820D5B90800619DB7 /* Round1VC.swift */; };
 		B504CD1B20D5C8FE00619DB7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B504CD1A20D5C8FE00619DB7 /* TabBarController.swift */; };
+		B50D80D121495274003F21D8 /* AddTeamRoundScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50D80D021495274003F21D8 /* AddTeamRoundScoreVC.swift */; };
+		B50D80D321496827003F21D8 /* ButtonBackgroundColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50D80D221496827003F21D8 /* ButtonBackgroundColorExtention.swift */; };
 		B51CE79621316ECC00BDE606 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CE79521316ECC00BDE606 /* DataService.swift */; };
-		B51CE79821316EDD00BDE606 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CE79721316EDD00BDE606 /* AuthService.swift */; };
 		B51CE79A21318C0B00BDE606 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51CE79921318C0B00BDE606 /* AuthVC.swift */; };
+		B51FE5AA214B1BFC00ECC145 /* TeamDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FE5A9214B1BFC00ECC145 /* TeamDataService.swift */; };
+		B51FE5AE214BEFCC00ECC145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B521BE38213D4D4E00165B11 /* Assets.xcassets */; };
 		B521BE2F213C6EA000165B11 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521BE2E213C6EA000165B11 /* UIViewExt.swift */; };
 		B521BE33213C6F0900165B11 /* StringCheckIsIntExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521BE32213C6F0900165B11 /* StringCheckIsIntExt.swift */; };
 		B521BE35213CA46600165B11 /* TapToDismissKeyboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521BE34213CA46600165B11 /* TapToDismissKeyboardExt.swift */; };
-		B521BE37213D3A4200165B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B521BE36213D3A4200165B11 /* Assets.xcassets */; };
 		B521BE3A213D7C5400165B11 /* RoundScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521BE39213D7C5400165B11 /* RoundScore.swift */; };
 		B539BB5B20D56CEA00024A54 /* TeamResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539BB5A20D56CEA00024A54 /* TeamResultCell.swift */; };
+		B5429746214FD21E00A0147F /* SelectedTaskEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5429745214FD21E00A0147F /* SelectedTaskEnums.swift */; };
 		B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */; };
 		B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */; };
 		B54E9C3A20CEB65D001BE3EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54E9C3820CEB65D001BE3EF /* Main.storyboard */; };
@@ -36,18 +39,20 @@
 		B19319BAE7D98C74EC096F3A /* Pods-debat-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-debat-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-debat-app/Pods-debat-app.release.xcconfig"; sourceTree = "<group>"; };
 		B504CD1820D5B90800619DB7 /* Round1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Round1VC.swift; sourceTree = "<group>"; };
 		B504CD1A20D5C8FE00619DB7 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B50D80D021495274003F21D8 /* AddTeamRoundScoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamRoundScoreVC.swift; sourceTree = "<group>"; };
+		B50D80D221496827003F21D8 /* ButtonBackgroundColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBackgroundColorExtention.swift; sourceTree = "<group>"; };
 		B51CE7922131698900BDE606 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		B51CE7932131698900BDE606 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		B51CE79521316ECC00BDE606 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		B51CE79721316EDD00BDE606 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		B51CE79921318C0B00BDE606 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		B51FE5A9214B1BFC00ECC145 /* TeamDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDataService.swift; sourceTree = "<group>"; };
 		B521BE2E213C6EA000165B11 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExt.swift; path = "../../breakpoint-app/breakpoint-app/Ext/UIViewExt.swift"; sourceTree = "<group>"; };
 		B521BE32213C6F0900165B11 /* StringCheckIsIntExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCheckIsIntExt.swift; sourceTree = "<group>"; };
 		B521BE34213CA46600165B11 /* TapToDismissKeyboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapToDismissKeyboardExt.swift; sourceTree = "<group>"; };
-		B521BE36213D3A4200165B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		B521BE38213D4D4E00165B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B521BE39213D7C5400165B11 /* RoundScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundScore.swift; sourceTree = "<group>"; };
 		B539BB5A20D56CEA00024A54 /* TeamResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamResultCell.swift; sourceTree = "<group>"; };
+		B5429745214FD21E00A0147F /* SelectedTaskEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedTaskEnums.swift; sourceTree = "<group>"; };
 		B54E9C3120CEB65D001BE3EF /* debat-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "debat-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E9C3420CEB65D001BE3EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54E9C3620CEB65D001BE3EF /* StartDebateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDebateVC.swift; sourceTree = "<group>"; };
@@ -103,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				B51CE79521316ECC00BDE606 /* DataService.swift */,
-				B51CE79721316EDD00BDE606 /* AuthService.swift */,
+				B51FE5A9214B1BFC00ECC145 /* TeamDataService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -114,14 +119,22 @@
 				B521BE2E213C6EA000165B11 /* UIViewExt.swift */,
 				B521BE32213C6F0900165B11 /* StringCheckIsIntExt.swift */,
 				B521BE34213CA46600165B11 /* TapToDismissKeyboardExt.swift */,
+				B50D80D221496827003F21D8 /* ButtonBackgroundColorExtention.swift */,
 			);
 			name = Extention;
+			sourceTree = "<group>";
+		};
+		B5429744214FD1F800A0147F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B5429745214FD21E00A0147F /* SelectedTaskEnums.swift */,
+			);
+			name = Enums;
 			sourceTree = "<group>";
 		};
 		B54E9C2820CEB65D001BE3EF = {
 			isa = PBXGroup;
 			children = (
-				B521BE36213D3A4200165B11 /* Assets.xcassets */,
 				B54E9C3320CEB65D001BE3EF /* debat-app */,
 				B54E9C3220CEB65D001BE3EF /* Products */,
 				167A43879E8D840318EE9441 /* Pods */,
@@ -140,6 +153,7 @@
 		B54E9C3320CEB65D001BE3EF /* debat-app */ = {
 			isa = PBXGroup;
 			children = (
+				B5429744214FD1F800A0147F /* Enums */,
 				B521BE30213C6EA900165B11 /* Extention */,
 				B51CE79421316EAA00BDE606 /* Services */,
 				B504CD1520D5B36700619DB7 /* Model */,
@@ -164,6 +178,7 @@
 				B504CD1820D5B90800619DB7 /* Round1VC.swift */,
 				B504CD1A20D5C8FE00619DB7 /* TabBarController.swift */,
 				B51CE79921318C0B00BDE606 /* AuthVC.swift */,
+				B50D80D021495274003F21D8 /* AddTeamRoundScoreVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -243,7 +258,7 @@
 			files = (
 				B54E9C4220CEB65D001BE3EF /* LaunchScreen.storyboard in Resources */,
 				B59DEDF921316766003942DE /* GoogleService-Info.plist in Resources */,
-				B521BE37213D3A4200165B11 /* Assets.xcassets in Resources */,
+				B51FE5AE214BEFCC00ECC145 /* Assets.xcassets in Resources */,
 				B54E9C3A20CEB65D001BE3EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,15 +343,18 @@
 				B51CE79621316ECC00BDE606 /* DataService.swift in Sources */,
 				B54E9C3720CEB65D001BE3EF /* StartDebateVC.swift in Sources */,
 				B504CD1B20D5C8FE00619DB7 /* TabBarController.swift in Sources */,
+				B5429746214FD21E00A0147F /* SelectedTaskEnums.swift in Sources */,
+				B51FE5AA214B1BFC00ECC145 /* TeamDataService.swift in Sources */,
 				B5FFEE4F20CEE54C009B5DFD /* TeamSetUpCell.swift in Sources */,
 				B54E9C4B20CEBCD3001BE3EF /* SetUpTeamVC.swift in Sources */,
+				B50D80D121495274003F21D8 /* AddTeamRoundScoreVC.swift in Sources */,
 				B521BE33213C6F0900165B11 /* StringCheckIsIntExt.swift in Sources */,
 				B51CE79A21318C0B00BDE606 /* AuthVC.swift in Sources */,
 				B539BB5B20D56CEA00024A54 /* TeamResultCell.swift in Sources */,
 				B54E9C3D20CEB65D001BE3EF /* debat_app.xcdatamodeld in Sources */,
-				B51CE79821316EDD00BDE606 /* AuthService.swift in Sources */,
 				B504CD1920D5B90800619DB7 /* Round1VC.swift in Sources */,
 				B54E9C3520CEB65D001BE3EF /* AppDelegate.swift in Sources */,
+				B50D80D321496827003F21D8 /* ButtonBackgroundColorExtention.swift in Sources */,
 				B521BE3A213D7C5400165B11 /* RoundScore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
