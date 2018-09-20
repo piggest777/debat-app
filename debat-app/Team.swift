@@ -11,8 +11,8 @@ import Foundation
 
 struct TeamSetings {
     var name: String
-    var totalScore: String
-    init(name: String, totalScore: String) {
+    var totalScore: Double
+    init(name: String, totalScore: Double) {
         self.name = name
         self.totalScore = totalScore
     }

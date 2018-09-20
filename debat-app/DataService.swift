@@ -39,9 +39,10 @@ class DataService {
         
         let name = team.name
         let score = team.totalScore
-        let teamSettings = ["teamName": name, "teamScore": score] 
+        let child = REF_TEAMS.childByAutoId()
         
-        REF_TEAMS.childByAutoId().updateChildValues(teamSettings)
+        child.updateChildValues(["teamName": name])
+        child.updateChildValues(["teamScore": score])
         
         getTeamsName() { (returnedTeamArray) in
             self.teamArray = returnedTeamArray
@@ -54,6 +55,27 @@ class DataService {
                 print("Команда не была добавлена в базу")
                 completionHandler (false)
                 self.teamArray = []
+            }
+        }
+    }
+    
+    func changeDoneIndicator(team: TeamSetings, teamKey: String, numberOfRound: Int, doneIndicatorStatus: Bool, handler: @escaping (Bool)->()) {
+        
+       let ref =  REF_TEAMS.child(teamKey).child("\(numberOfRound)RoundScore")
+        
+        if doneIndicatorStatus {
+            ref.updateChildValues(["doneIndicator": true])
+        } else {
+            ref.updateChildValues(["doneIndicator": false])
+        }
+        
+        getTeamsRoundScore(forTeam: team, round: numberOfRound) { (returnedRoundScores) in
+            let roundScores = returnedRoundScores
+            let doneIndicator = roundScores.doneIdicator
+            if doneIndicatorStatus == doneIndicator {
+                handler (true)
+            } else{
+                handler(false)
             }
         }
     }
@@ -121,7 +143,7 @@ class DataService {
             for team in teamsDataSnapshot {
                 
                 let teamName = team.childSnapshot(forPath: "teamName").value as! String
-                let teamScore = team.childSnapshot(forPath: "teamScore").value as! String
+                let teamScore = team.childSnapshot(forPath: "teamScore").value as! Double
                 
                 let teamToAdd = TeamSetings(name: teamName, totalScore: teamScore)
                 teamsArray.append(teamToAdd)
@@ -156,16 +178,43 @@ class DataService {
             
             
              self.REF_TEAMS.child(key).child("\(round)RoundScore").observe(.value, with: { (roundResultDataSnapshot) in
-                guard let roundResultDataSnapshot = roundResultDataSnapshot.children.allObjects as? [DataSnapshot] else {return}
+//                guard let roundResultDataSnapshot = roundResultDataSnapshot.children.allObjects as? [DataSnapshot] else {return}
+                guard let roundResultDataSnapshot = roundResultDataSnapshot.value as? NSDictionary else {return}
                 
-                let task1 = roundResultDataSnapshot[0].value as! Int
-                let task2 = roundResultDataSnapshot[1].value as! Int
-                let task3 = roundResultDataSnapshot[2].value as! Int
-                let task4 = roundResultDataSnapshot[3].value as! Int
-                
-                let teamRoundScores = RoundScores(task1: task1, task2: task2, task3: task3, task4: task4)
+                let task1 = roundResultDataSnapshot["1Task"] as! Double
+                let task2 = roundResultDataSnapshot["2Task"] as! Double
+                let task3 = roundResultDataSnapshot["3Task"] as! Double
+                let task4 = roundResultDataSnapshot["4Task"] as! Double
+                let doneIndicator = roundResultDataSnapshot ["doneIndicator"] as! Bool
+               
+                let teamRoundScores = RoundScores(task1: task1, task2: task2, task3: task3, task4: task4, doneIndicator: doneIndicator)
                 
                 handler(teamRoundScores)
+                
+//                for task in roundResultDataSnapshot{
+//                    print(task)
+//                    print(roundResultDataSnapshot)
+//                    let task1 = task.childSnapshot(forPath: "\(round)Round-1Konkurs").value
+//                        print(task.childSnapshot(forPath: "\(round)Round-1Konkurs").value)
+////                        as! Double
+//                    let task2 = task.childSnapshot(forPath: "\(round)Round-2Konkurs").value as! Double
+//                    let task3 = task.childSnapshot(forPath: "\(round)Round-3Konkurs").value as! Double
+//                    let task4 = task.childSnapshot(forPath: "\(round)Round-4Konkurs").value as! Double
+//                    let doneIndicator = task.childSnapshot(forPath: "doneIndicator").value as! Bool
+//
+//                    let teamRoundScores = RoundScores(task1: task1 as! Double, task2: task2, task3: task3, task4: task4, doneIndicator: doneIndicator)
+//
+//                    handler(teamRoundScores)
+//                }
+                
+                
+//                let task1 = roundResultDataSnapshot[0].value as! Double
+//                let task2 = roundResultDataSnapshot[1].value as! Double
+//                let task3 = roundResultDataSnapshot[2].value as! Double
+//                let task4 = roundResultDataSnapshot[3].value as! Double
+//                let doneIndicator = roundResultDataSnapshot[4].value as! Bool
+                
+
             })
             
         }

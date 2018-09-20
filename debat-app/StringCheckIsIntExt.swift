@@ -9,9 +9,9 @@
 import Foundation
 
 extension String {
-    func isStringAnInt() -> Bool {
+    func isStringAnDouble() -> Bool {
         
-        if let _ = Int(self) {
+        if let _ = Double(self) {
             return true
         }
         return false

@@ -8,9 +8,9 @@
 
 import Foundation
 
-enum numberOfTask {
-    case firstTask
-    case secondTask
-    case thirdTask
-    case fourthTask
+enum NumberOfTask: String {
+    case firstTask = "1"
+    case secondTask = "2"
+    case thirdTask = "3"
+    case fourthTask = "4"
 }

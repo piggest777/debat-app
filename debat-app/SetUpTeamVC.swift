@@ -70,7 +70,7 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     func initTeam (){
         
         if teamName.text != "" && teamScore.text != "" {
-            if teamScore.text!.isStringAnInt() {
+            if teamScore.text!.isStringAnDouble() {
                 DataService.instance.checkIsTeamAlreadyInLst(teamname: teamName.text!) { (isContainTeam) in
                     if isContainTeam {
                         let teamNameAlert = UIAlertController(title: "Ошибка", message: "Команда с таким именем уже существует, создайте пожалуйста другую команду", preferredStyle: .alert)
@@ -80,10 +80,11 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                         self.present(teamNameAlert, animated: true, completion: nil)
                     } else {
                         let name = self.teamName.text!
-                        let scrore = self.teamScore.text!
-                        let team = TeamSetings(name: name, totalScore: scrore)
+                        let score = Double(self.teamScore.text!)
+                        let team = TeamSetings(name: name, totalScore: score!)
                         DataService.instance.createTeam(team: team) { (success) in
                             if success {
+
                                 self.teamName.text = ""
                                 self.teamScore.text = ""
                                 
@@ -168,7 +169,7 @@ class SetUpTeamVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         let team = TeamDataService.instance.teamArray[indexPath.row]
         cell.teamName.text = team.name
-        cell.teamScore.text = team.totalScore
+        cell.teamScore.text = String(team.totalScore)
         
         return cell
     }
